@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    function checkList(value1,value2) {
+        for(let item of value1) {
+            if(item === value2) {
+                return true;
+            }
+        }
+        return false;
+    }
+    let names = ["A","B","C","D","E"];
+    console.log(checkList(names,"D"));
+</script>
+</body>
+</html>

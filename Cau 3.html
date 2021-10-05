@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    let Vowels = ["a", "e", "i", "o", "u"]
+    function countVowel(arr) {
+        let count=0;
+        for (let i = 0; i < arr.length; i++) {
+            if (Vowels.indexOf(arr[i]) === -1) {
+                return false;
+            } else {
+                count++;
+            }
+        } return count;
+    }
+    let characters=[];
+    let charactersEnter=prompt("nhập vào chuỗi kí tự");
+    characters=[charactersEnter];
+    document.write( countVowel(characters));
+</script>
+</body>
+</html>

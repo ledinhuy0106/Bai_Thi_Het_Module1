@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4</title>
+
+</head>
+<body>
+<script>
+    class Animal {
+        name;
+        weight;
+        constructor(name, weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+        setName(newName) {
+            this.name = newName;
+        }
+        getName() {
+            return this.name;
+        }
+        setWeight(newWeight) {
+            this.weight = newWeight;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        toString() {
+            return 'Animal có tên là ' + this.getName() + ' và cân nặng là ' + this.getWeight()+'<br>';
+        }
+    }
+    let objAnimal1 = new Animal();
+    let objAnimal2 = new Animal('valu', 56);
+    objAnimal1.setName("Elephant");
+    objAnimal1.setWeight(45.6);
+    document.write(objAnimal1.toString());
+    objAnimal2.setName("Mouse");
+    document.write(objAnimal2.toString());
+</script>
+</body>
+</html>

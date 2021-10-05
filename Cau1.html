@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<script>
+    function firstDegreeEquation(a, b) {
+        if (a === 0 && b === 0) {
+            return "Phương trình vô số nghiệm";
+        } else if (a !== 0 && b === 0) {
+            return "Phương trình có nghiệm x = 0";
+        } else if (a === 0 && b !== 0) {
+            return "Phương trình vô nghiệm";
+        } else {
+            return "Phương trình có nghiệm x = " + (-b / a);
+        }
+    }
+    console.log(firstDegreeEquation(5 , 8));
+</script>
+</body>
+</html>
